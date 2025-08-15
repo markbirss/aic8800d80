@@ -1,4 +1,5 @@
 # Luckfox Lyra
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/27d16309-3419-424b-8eab-fe3fdf70244e" />
 
 ```
 sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iwconfig iw wireless-tools rfkill
