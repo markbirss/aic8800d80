@@ -1,3 +1,10 @@
+# Luckfox Lyra
+
+```
+sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iwconfig iw wireless-tools rfkill
+
+```
+
 # AIC8800D80 Linux Driver
 This driver is for the AIC8800D80 chipset, supported by devices such as the Tenda U11 and AX913B.
 
