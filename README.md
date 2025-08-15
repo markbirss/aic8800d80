@@ -3,6 +3,30 @@
 ```
 sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iwconfig iw wireless-tools rfkill
 
+installing linux-firmware will conflict with the dongle firmware
+
+need to reaplce again
+sudo cp -r ./fw/aic8800D80 /lib/firmware/
+
+root@forge1:~# iwconfig
+lo        no wireless extensions.
+
+can0      no wireless extensions.
+
+end0      no wireless extensions.
+
+end1      no wireless extensions.
+
+wlx90de80d5be5b  unassociated  ESSID:""  Nickname:"AIC@8800"
+          Mode:Auto  Frequency=2.412 GHz  Access Point: Not-Associated   
+          Bit Rate:0 kb/s   
+          Encryption key:off
+          Link Quality=0/100  Signal level=-100 dBm  Noise level=0 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+usb0      no wireless extensions.
+
 ```
 
 # AIC8800D80 Linux Driver
