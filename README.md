@@ -8,6 +8,19 @@ installing linux-firmware will conflict with the dongle firmware (if you do inst
 need to reaplce again
 sudo cp -r ./fw/aic8800D80 /lib/firmware/
 
+
+root@forge1:~# lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 004: ID 368b:8d81 AICSemi AIC 8800D80
+root@forge1:~# lsusb -tv
+/:  Bus 001.Port 001: Dev 001, Class=root_hub, Driver=dwc2/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 002.Port 001: Dev 001, Class=root_hub, Driver=dwc2/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 001: Dev 004, If 0, Class=Vendor Specific Class, Driver=aic8800_fdrv, 480M
+        ID 368b:8d81
+
 root@forge1:~# iwconfig
 lo        no wireless extensions.
 
