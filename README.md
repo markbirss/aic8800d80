@@ -3,7 +3,7 @@
 ```
 sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iwconfig iw wireless-tools rfkill
 
-installing linux-firmware will conflict with the dongle firmware
+installing linux-firmware will conflict with the dongle firmware (if you do install dongle the firmware again below)
 
 need to reaplce again
 sudo cp -r ./fw/aic8800D80 /lib/firmware/
