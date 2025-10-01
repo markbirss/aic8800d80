@@ -8,6 +8,8 @@ https://github.com/shenmintao/aic8800d80/commit/eeec52a2311e682cdb57a186f222ac21
 
 ```
 sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iw wireless-tools rfkill
+wget -c https://github.com/markbirss/linux-6.1.99/releases/download/1/linux-headers-6.1.99_6.1.99-3_armhf.deb
+sudo dpkg -i linux-headers-6.1.99_6.1.99-3_armhf.deb
 git clone https://github.com/markbirss/aic8800d80.git
 cd aic8800d80
 sudo cp aic.rules /lib/udev/rules.d/
