@@ -2,12 +2,21 @@
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/27d16309-3419-424b-8eab-fe3fdf70244e" />
 
 ```
-Rember
+Reminder to check
 https://github.com/shenmintao/aic8800d80/commit/eeec52a2311e682cdb57a186f222ac218deaf748
 ```
 
 ```
 sudo apt -y update; sudo apt -y install eject network-manager build-essential git make cmake iw wireless-tools rfkill
+git clone https://github.com/markbirss/aic8800d80.git
+cd aic8800d80
+sudo cp aic.rules /lib/udev/rules.d/
+sudo cp -r ./fw/aic8800D80 /lib/firmware/
+cd ./drivers/aic8800
+make -j3; sudo make install; sudo reboot
+
+test
+adb shell nmcli dev wifi list
 
 installing linux-firmware will conflict with the dongle firmware (if you do install dongle the firmware again below)
 
